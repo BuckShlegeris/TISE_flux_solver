@@ -1,20 +1,22 @@
-Particle Flux Solver
+TISE flux solver
 
 Buck Shlegeris, 2013, bshlegeris@gmail.com
 
-This is software which solves the time-independant Schroedinger equation to 
+This is software which solves the time-independent Schroedinger equation to 
 determine the particle flux through some piecewise constant potential function.
 
 For example, the software can calculate the transmission amplitude for a particle
 of whatever energy through a finite barrier or finite well.
 
-The code which does that solving is in fluxsolver.py.
+The code which does that solving is in flux_solver.py.
 
-The responsecurves.py module just contains a function to call the functions in 
-fluxsolver.py with different energy values. This allows you to see the
+The response_curves.py module just contains a function to call the functions in 
+flux_solver.py with different energy values. This allows you to see the
 transmission probabilites for a potential function as a function of the energy
 of an incoming particle. This is basically a response curve. If you just run the
 module as a script, an example will run.
+
+repeated_barriers.py is an example of using this code.
 
 DEPENDENCIES
 
